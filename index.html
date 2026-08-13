@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Western University</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+   
+        :root {
+      --olive-green: #8DB92E;
+      --olive-green-dark: #749a24;
+      --dark-blue: #1B3A6B;
+    }
+
+    .custom-nav, .custom-footer {
+      background-color: var(--olive-green) !important;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      background-color: var(--olive-green-dark);
+      border-radius: 4px;
+    }
+    .banner-title-khmer {
+      font-size: 1.1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .banner-title-en {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 0;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+
+    .section-heading {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .content-area {
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+      min-height: 60vh;
+    }
+
+    /* Page Visibility Control */
+    .page-section {
+      display: none;
+    }
+
+    .page-section.active-page {
+      display: block;
+    }
+    .nn :hover{
+    transform: translateX(10px);
+    border-left: 4px solid #f166c3;
+    background-color: #cef5f2;
+    border-radius: 0 8px 8px 0;
+    }
+    .row-g4:hover{
+      transform:translateX(10px);
+    }
+    .class-lead{
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .header-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  </style>
+</head>
+<body>
+<div class="container"> 
+  <!-- Top Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-nav sticky-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-1"><a class="nav-link active" onclick="switchPage('home', this)"><i class="fa-solid fa-house me-1"></i> Home |</a></li>
+          <li class="nav-item mx-1"><a class="nav-link" onclick="switchPage('history', this)"><i class="fa-solid fa-landmark me-1"></i> History |</a></li>
+          <li class="nav-item mx-1"><a class="nav-link" onclick="switchPage('vision', this)"><i class="fa-solid fa-bullseye me-1"></i> Vision and Mission |</a></li>
+          <li class="nav-item mx-1"><a class="nav-link" onclick="switchPage('collaboration', this)"><i class="fa-solid fa-handshake me-1"></i> Collaboration |</a></li>
+          <li class="nav-item mx-1"><a class="nav-link" onclick="switchPage('contact', this)"><i class="fa-solid fa-address-book me-1"></i> Contact Us |</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   
+   <header class="header-banner">
+      <img src="https://vannbunthirith.github.io/wu/Images/WU_Background2.png" alt="Scholarship Application Form Banner">
+    </header>
+
+  <!-- Main Container -->
+  <main class="container content-area">
+
+    <!--1 HOME PAGE -->
+    <div id="home" class="page-section active-page">
+      <div class="d-flex align-items-center mb-4">
+        <i class="fa-solid fa-building-columns section-heading me-2"></i>
+        <h2 class="section-heading mb-0"><U>Recent News:</U></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://vannbunthirith.github.io/wu/Images/1.jpg" class="card-img-top" alt="Airline Expansion">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#" class="text-decoration-none text-primary fw-bold">Major Airline Announces Regional Route Expansion</a></h5>
+              <p class="card-text text-muted small">New direct flights connect key regional hubs, boosting local tourism and international academic mobility opportunities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://vannbunthirith.github.io/wu/Images/2.jpg" class="card-img-top" alt="Local Business Feature">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#" class="text-decoration-none text-primary fw-bold">Local Business Incubator Launches Tech Startups</a></h5>
+              <p class="card-text text-muted small">Western University graduates showcase cutting-edge innovations at the annual regional entrepreneurship showcase.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://vannbunthirith.github.io/wu/Images/3.jpg" class="card-img-top" alt="Development Project">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#" class="text-decoration-none text-primary fw-bold">New Economic Zone and Urban Development Project</a></h5>
+              <p class="card-text text-muted small">The municipal government unveils infrastructure plans expected to create thousands of jobs for upcoming graduates.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- 2 HISTORY PAGE -->
+    <div id="history" class="page-section">
+      <div class="d-flex align-items-center mb-4">
+        <i class="fa-solid fa-landmark section-heading me-2"></i>
+        <h2 class="section-heading mb-0"><u> History of Western University: </u></h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="lead"  text-dark lh-lg >          
+            Western University was founded as a university by a sub-decree 72 on 17 November 2003 by its owner, Mr. Te Laurent. Mr. Laurent also started the Western International School in the same year. In 2005 with the approval of the Ministry of Education, Youth and Sport, Western University branch was also established in Kompong Cham province. Mr. Laurent, is the Rector of Western University, is a graduate of Economic Science in Finance and Banking in University of Sorbonne, Paris, France. The University is continually fortifying its executive setup and academic processes to enable it to Provide high quality education in support of the human resource developments that Cambodia needs to support its development. To this end, it has embarked on a program to further improve the quality of its teaching to reach international standards.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 VISION AND MISSION PAGE -->
+    <div id="vision" class="page-section">
+      <div class="d-flex align-items-center mb-4">
+        <i class="fa-solid fa-bullseye section-heading me-2"></i>
+        <h2 class="section-heading mb-0"><u> Vision, Mission & Value:</u></h2>
+      </div>
+      <p class="text-danger mb-4">
+        Western University continues to build upon its rich foundation of educational heritage across its multiple branch campuses, consistently refining its curricula to foster comprehensive human development and leadership capabilities.
+      </p>
+      <h4 class="text-dark fw-bold mt-4">Vision</h4>
+      <p class="text-danger">To be a premier, internationally recognized university dedicated to delivering top-tier higher education, cultivating research excellence, and shaping ethical leaders for a sustainable future.</p>
+
+      <h4 class="text-dark fw-bold mt-4">Mission</h4>
+      <p class="text-danger">In adherence to its motto, “Where Quality Comes First”, Western University is committed to providing quality education, strengthening R&D and entrepreneurship, and upholding the humans’ values for sustainable development. <strong>"Where Quality Comes First"</strong>.</p>
+
+      <h4 class="text-dark fw-bold mt-4"><U>Goals :</U></h4>
+        <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i><strong>Goal1 :</strong> Strengthen Governance, Management and Finance.</li>
+        <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i><strong>Goal2 : </strong> Improve Quality of Teaching and Learning.</li>
+        <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i><strong>Goal3 :</strong> Increase Community Services.</li>
+        <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i><strong>Goal4 :</strong>  Develop Human Resources.</li>
+        <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i><strong>Goal5 :</strong> Promote R&D and Entrepreneurship.</li>
+        <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i><strong>Goal6 :</strong> Expand Learning and physical resources.</li>
+      </ul>
+    </div>
+
+    <!--4 COLLABORATION page-->
+    <div id="collaboration" class="page-section">
+      <div class="d-flex align-items-center mb-4">
+        <i class="fa-solid fa-handshake section-heading me-2"></i>
+        <h2 class="section-heading mb-0"><u> Collaborations: </u></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-xl-3 col-md-6 col-12">
+          <div class="card p-3 text-center shadow-sm h-100 border">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <a href="https://english.gdut.edu.cn/Admission.htm"target="-blank"> 
+              <img src="https://vannbunthirith.github.io/wu/Collaboration/GuangdongUniversity.png" class="rounded-circle mb-3 border p-1" alt="Partner Logo">
+              </a>
+              <h5 class="card-title fs-6 fw-bold">Global Tech University</h5>
+              <p class="card-text text-muted small mb-0">Joint Research & Student Exchange</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6 col-12">
+          <div class="card p-3 text-center shadow-sm h-100 border">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <a href="https://www.gzu.edu.cn/en/" target="_blank">
+                <img src="https://vannbunthirith.github.io/wu/Collaboration/GuiyangUniversity.png" class="rounded-circle mb-3 border p-1" alt="Partner Logo">
+              </a>
+                <h5 class="card-title fs-6 fw-bold">Pacific Institute of Management</h5>
+                 <p class="card-text text-muted small mb-0">Dual Degree Programs</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6 col-12">
+          <div class="card p-3 text-center shadow-sm h-100 border">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <a href="https://www.yu.ac.kr/english/index.do" target="_blank">           
+                <img src="https://vannbunthirith.github.io/wu/Collaboration/YeungnamUniversity.png" class="rounded-circle mb-3 border p-1" alt="Partner Logo">
+              </a>
+                 <h5 class="card-title fs-6 fw-bold">Metropolitan Science Academy</h5>
+                  <p class="card-text text-muted small mb-0">Faculty Development Initiative</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6 col-12">
+          <div class="card p-3 text-center shadow-sm h-100 border">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <a href="https://www.harvard.edu/" target="_blank"> 
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Harvard_University_coat_of_arms.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" class="rounded-circle mb-3 border p-1" alt="Partner Logo">
+              </a>
+                <h5 class="card-title fs-6 fw-bold">European Consortium for Ed.</h5>
+                  <p class="card-text text-muted small mb-0">Cultural & Academic Linkages</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 CONTACT US PAGE -->
+    <div id="contact" class="page-section">
+      <div class="d-flex align-items-center mb-4">
+        <i class="fa-solid fa-address-book section-heading me-2"></i>
+        <h2 class="section-heading mb-0"><U> Contact and Located: </U></h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="nn col-lg-8">
+          <div class="p-4 border rounded shadow-sm mb-4 bg-light">
+            <h4 class="fw-bold text-dark mb-3"><i class="fa-solid fa-location-dot text-danger me-2"></i>Campus 1: Main Headquarters</h4>
+            <p class="mb-2"><strong>Address (សាខាទួលគោក):</strong>   No 145, St.608 Corner St.313, Sangkat Boeng Kork II, Khan Toul Kork, Phnom Penh, Cambodia <span class="badge bg-secondary ms-2">Map Below</span></p>
+            <p class="mb-2"><strong>Email:</strong> <a href="#" class="text-decoration-none"><U> info_wu@westernuniversity.edu.kh</U></a></p>
+            <p class="mb-0"><strong>Phone:</strong> +855 96 8000 111</p>
+            <p class="mb-0"><strong>Map :</strong> <a href="https://maps.google.com/maps?ll=11.571555,104.889243&z=14&t=m&hl=en-US&gl=US&mapclient=embed&cid=17498659402428551813"target="-blank" class="text-decoration-none"><U> Here</U></a></p>
+          </div>
+          <div class="p-4 border rounded shadow-sm mb-4 bg-light">
+            <h4 class="fw-bold text-dark mb-3"><i class="fa-solid fa-location-dot text-danger me-2"></i>Campus 2: Northern Branch</h4>
+            <p class="mb-2"><strong>Address  ( សាខាស្ទឺងមានជ័យ)​​:</strong> #66, St.217, Russey Village, Sangkat Steung Mean Chey, Khan Mean Chey, Phnom Penh, Phnom Penh, Cambodia <span class="badge bg-secondary ms-2">Map Below</span></p>
+            <p class="mb-2"><strong>Email:</strong> <a href="mailto:info.c2@western.edu.kh" class="text-decoration-none"><U> info_wu@westernuniversity.edu.kh</U></a></p>
+            <p class="mb-0"><strong>Phone:</strong> +855 96 8000 118</a></p>
+             <p class="mb-2"><strong>Map:</strong> <a href="https://www.google.com/maps/place/%E1%9E%9F%E1%9E%B6%E1%9E%80%E1%9E%9B%E1%9E%9C%E1%9E%B7%E1%9E%91%E1%9F%92%E1%9E%99%E1%9E%B6%E1%9E%9B%E1%9F%90%E1%9E%99%E1%9E%9C%E1%9F%81%E1%9E%9F%E1%9F%92%E1%9E%91%E1%9E%BE%E1%9E%93+-+%E1%9E%9F%E1%9F%92%E1%9E%91%E1%9E%B9%E1%9E%84%E1%9E%98%E1%9E%B6%E1%9E%93%E1%9E%87%E1%9F%90%E1%9E%99/@11.5284898,104.8829873,16z/data=!4m6!3m5!1s0x310951003600014f:0x708a7041a3a576c2!8m2!3d11.5308866!4d104.8871501!16s%2Fg%2F11w7cb_lj1?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-decoration-none"><U>Here</U></a></p>
+          </div>
+          <div class="p-4 border rounded shadow-sm mb-4 bg-light">
+            <h4 class="fw-bold text-dark mb-3"><i class="fa-solid fa-location-dot text-danger me-2"></i>Campus 3: Southern Branch</h4>
+            <p class="mb-2"><strong>Address (សាខាក្រុងតាខ្មៅ ខេត្តកណ្តាល)​​:</strong>  អគារលេខ ២០-២២ ផ្លូវលេខ១០៨ កែងផ្លូវ២០៩ សង្កាត់តាខ្មៅ ក្រុងតាខ្មៅ ខេត្តកណ្តាល។, Ta Khmau, Cambodia <span class="badge bg-secondary ms-2">Map Below</span></p>
+            <p class="mb-2"><strong>Email:</strong> <a href="mailto:info.c3@western.edu.kh" class="text-decoration-none"><U> info.c3@western.edu.kh</U></a></p>
+            <p class="mb-0"><strong>Phone:</strong> +855 96 8000 106</a></p>
+            <p class="mb-0"><strong>Map :</strong> <a href="https://www.google.com/maps/place/%E1%9E%9F%E1%9E%B6%E1%9E%80%E1%9E%9B%E1%9E%9C%E1%9E%B7%E1%9E%91%E1%9F%92%E1%9E%99%E1%9E%B6%E1%9E%9B%E1%9F%90%E1%9E%99%E1%9E%9C%E1%9F%81%E1%9E%9F%E1%9F%92%E1%9E%91%E1%9E%B8%E1%9E%93%E2%80%8B(%E1%9E%9F%E1%9E%B6%E1%9E%81%E1%9E%B6%E1%9E%80%E1%9F%92%E1%9E%9A%E1%9E%BB%E1%9E%84%E1%9E%8F%E1%9E%B6%E1%9E%81%E1%9F%92%E1%9E%98%E1%9F%85+%E1%9E%81%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%8F%E1%9E%80%E1%9E%8E%E1%9F%92%E1%9E%8F%E1%9E%B6%E1%9E%9B)/@11.4792372,104.9461732,17z/data=!3m1!4b1!4m6!3m5!1s0x310959f241549d47:0x6f7a1676596db30b!8m2!3d11.4792372!4d104.9487481!16s%2Fg%2F11bwf82q8x?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-decoration-none"><U> Here</U></a></p>
+          </div>
+          <div class="p-4 border rounded shadow-sm bg-light">
+            <h4 class="fw-bold text-dark mb-3"><i class="fa-solid fa-location-dot text-danger me-2"></i>Campus 4: Provincial Extension</h4>
+            <p class="mb-2"><strong>Address (សាខាកំពង់ចាម)​​:</strong>  #171-173. Street Phreah AngEng, Kampong Cham, Cambodia <span class="badge bg-secondary ms-2">Map Below</span></p>
+            <p class="mb-2"><strong>Email:</strong> <a href="mailto:info.c4@western.edu.kh" class="text-decoration-none"><U>info.c4@western.edu.kh </U>info.c4@western.edu.kh</a></p>
+            <p class="mb-0"><strong>Phone:</strong> +855 96 8000 126</a></p>
+            <p class="mb-0"><strong>Map :</strong> <a href="https://www.google.com/maps/place/%E1%9E%9F%E1%9E%B6%E1%9E%80%E1%9E%9B%E2%80%8B%E1%9E%9C%E1%9E%B7%E1%9E%91%E1%9F%92%E1%9E%99%E1%9E%B6%E2%80%8B%E1%9E%9B%E1%9F%90%E1%9E%99%E2%80%8B%E1%9E%9C%E1%9F%81%E1%9E%9F%E1%9F%92%E1%9E%91%E1%9E%BE%E1%9E%93/@11.9801178,105.45621,17z/data=!3m1!4b1!4m6!3m5!1s0x310c6a60baeac3f7:0x6f465b0db98e8087!8m2!3d11.9801178!4d105.4587849!16s%2Fg%2F1hjgtwkyd?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"  class="text-decoration-none"><U> Here</U></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="custom-footer text-white text-center py-3">
+    <p class="mb-0">Copyright @2026</p>
+  </footer>
+</div>
+  <!-- Bootstrap JS Bundle CDN & Page Switcher Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function switchPage(pageId, element) {
+      // Hide all sections
+      const sections = document.querySelectorAll('.page-section');
+      sections.forEach(sec => sec.classList.remove('active-page'));
+
+      // Show target section
+      document.getElementById(pageId).classList.add('active-page');
+
+      // Update active state on nav links
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+      navLinks.forEach(link => link.classList.remove('active'));
+      element.classList.add('active');
+
+      // Collapse mobile menu automatically after click
+      const navbarCollapse = document.getElementById('navbarNav');
+      if (navbarCollapse.classList.contains('show')) {
+        new bootstrap.Collapse(navbarCollapse).toggle();
+      }
+
+      // Scroll smoothly back to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
